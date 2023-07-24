@@ -5,27 +5,27 @@
 
 		"local_host" : "localhost",
 		"local_user" : "root",
-		"local_password" : "S#@5ahil1P",
+		"local_password" : "your_pass",
 		"local_db" : "codingthunder",
 
 		"prod_host" : "localhost",
 		"prod_user" : "root",
-		"prod_password" : "S#@5ahil1P",
+		"prod_password" : "your_pass",
 		"prod_db" : "codingthunder",
 
 		"gmail_url" : "mailto:sahilvanarse13@gmail.com",
 		"instagram_url" : "https://www.instagram.com/sahill.5/",
 		"blog_name" : "Coast",
 		"tag_line" : "A blog for the public to read and learn about everything happening in the world.",
-		"gmail-user" : "sahilvanarse4@gmail.com",
-		"gmail-password" : "gyebcqdjeeypscon",
+		"gmail-user" : "your_email",
+		"gmail-password" : "your_pass",
 
 		"about_text" : "Hello,this is Sahil Vanarse and welcome to our blog site! Our mission is to provide you with engaging and informative content that will help you live a happier, healthier, and more productive life. We believe that everyone has the potential to achieve great things, and we hope to motivate and inspire you to reach your goals. Thank you for visiting, and we hope you enjoy our content!",
 		"about_text2" : " This Blog site includes information about the blog's author or authors, their mission or purpose, and any other relevant background information.",
 
 		"no_of_posts" : 3,
 
-		"admin_user" : "sahilvanarse",
-		"admin_password" : "rexop"
+		"admin_user" : "Hello_user",
+		"admin_password" : "1234567"
 	}
 }
