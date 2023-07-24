@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/img/admin-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage Post and Change them.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h1>Basic Actions</h1>
+                    <a href="/edit/0"><button class="btn btn-primary text-uppercase"> Add a New Posts</button></a>
+                    <hr>
+
+<h1>Upload a File</h1>
+<hr>
+<h1>Edit Post</h1>
+
+       <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SrNo</th>
+      <th scope="col">Title</th>
+      <th scope="col">Date</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for post in posts %}
+
+    <tr>
+      <td>{{post.sno}}</td>
+      <td>{{post.title}}</td>
+      <td>{{post.date}}</td>
+      <td><a href="/edit/{{post.sno}}"><button><img src="static/img/edit.png" width="20px"></button></a></td>
+      <td><a class=" btn-delete" href="/delete/{{post.sno}}"><button><img src="static/img/delete.png" width="20px"></button></a></td>
+    </tr>
+
+    {% endfor %}
+
+  </tbody>
+</table>
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                
+                </div>
+            </div>
+        </div>
+
+<script>
+const btnDelete= document.querySelectorAll('.btn-delete');
+// const btnAdd= document.querySelectorAll('.btn-secondary');
+
+if(btnDelete) {
+  const btnArray = Array.from(btnDelete);
+  btnArray.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      if(!confirm('Are you sure you want to Delete it?')){
+        e.preventDefault();
+      }
+    });
+  })
+}</script>
+{% endblock %}
+ 
